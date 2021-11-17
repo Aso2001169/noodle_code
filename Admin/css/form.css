@@ -1,0 +1,8 @@
+input[type="text"],input[type="number"],textarea{
+  border: 1px solid #0054a7;
+  padding: 10px;
+  width: 50vw;
+}
+.form-cnt{
+  margin-bottom: 40px;
+}

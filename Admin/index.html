@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  　　　<!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/3239b2a89b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-L"><a href="#"><i class="fas fa-home"></i></a></div>
+    <div class="header-center"><p>管理者トップ画面</p></div>
+    <div class="header-R"><p title="ログイン中のユーザ">aso@gmail.com</p></div>
+  </header>
+  <div id="app">
+      <div class="topmenu">
+        <nav>
+          <ul class="header-menu">
+            <li
+            v-for="(item,i) in menus":key="i" class="topmenu-a"><a :href="item.path">{{item.label}}</a></li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+</html>

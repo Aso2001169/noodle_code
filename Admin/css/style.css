@@ -1,0 +1,29 @@
+.formbox{
+  margin-bottom: 30px;
+}
+input{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border:  1px solid #706b6b;
+  padding: 20px;
+}
+button{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border:  1px solid #706b6b;
+  background-color: white;
+  padding: 20px;
+
+}
+button:hover{
+  background-color: #706b6b;
+
+}
+form{
+  width: 80vw;
+  margin: auto auto;
+}
