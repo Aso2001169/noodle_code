@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.image{
+    text-align: center;
+}
+
+.home{
+    text-align: center;
+}
+
+.btn-border {
+    margin-top:50px;
+    border: 2px solid #000;
+    background: #fff;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
