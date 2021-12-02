@@ -1,460 +1,642 @@
 * {
-    color: #001E43;
+  color: #001E43;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+header {
+  padding: 10px 2% 10px;
+  position: fixed;
+  top: 0;
+  left: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.noodle {
+  margin: 0;
+  padding: 6px;
+  font-size: 45px;
+  color: #001E43;
+}
+
+.haikei{
+  background-image: url(../index-img/haikei.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 50vw;
+}
+
+.haikei2-position{
+  text-align: left;
+  background-size: cover;
+  padding-top: 30vw;
+  padding-left: 3vw;
+  padding-bottom: 15vw;
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+}
+
+
+/* 黄金比 */
+img{
+  width: 100%;
+  height: auto;
+}
+
+.haikei2-img{
+  width:100%;
+  height:100%;
+
+}
+
+
+.haikei2-font{
+  width:100%;
+  /* margin: 10px 20px; */
+  margin-right: 3vw;
+  margin-left: 3vw;
+  line-height: 7vw;
+  font-size: 1.5vw;
+}
+
+
+
+.learn{
+  border: 2px solid #001E43;
+  background: #fff;
+  font-size: 2vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  color: #001E43;
+}
+
+.learn:hover {
+  color: #fff;
+  background: #001E43;
+}
+
+.learn-position{
+  padding-top: 3vw;
+  margin-left: 2vw;
+}
+
+.item-var{
+  font-size: 4vw;
+  padding-left: 50px;
+}
+
+
+.item-var:before{
+  content: "kitchen";
+  font-size: 2vw;
+  margin-right: 50px;
+}
+
+.name{
+  text-align: center;
+  padding-bottom: 3vw;
+
+}
+
+.flex01{
+display: flex;
+background: no-repeat;
+}
+
+
+
+.items{
+  font-size: 4vw;
+  padding-top: 30vw;
+  padding-left: 5vw;
+}
+
+.goods{
+  font-size: 3vw;
+  padding-top: 10vw;
+  padding-left: 8vw;
+  padding-bottom: 5vw;
+}
+
+
+.item-name1{
+  font-size: 3vw;
+  padding-left: 12vw;
+}
+
+.item-name1:before{
+  content: "01. ";
+  font-size: 4vw;
+}
+
+.item-name2{
+  font-size: 3vw;
+  padding-left: 12vw;
+}
+
+.item-name2:before{
+  content: "02. ";
+  font-size: 4vw;
+}
+
+.item-name3{
+  font-size: 3vw;
+  padding-left: 12vw;
+}
+
+.item-name3:before{
+  content: "03. ";
+  font-size: 4vw;
+}
+
+.item-name4{
+  font-size: 3vw;
+  padding-left: 12vw;
+}
+
+.item-name4:before{
+  content: "04. ";
+  font-size: 4vw;
+}
+
+
+/* 雑貨紹介の下線をどうしても引きたい
+.under-line > p{
+  border-bottom: solid 3px #87CEFA;
+} */
+
+
+.item-name {
+  padding-top: 40px;
+}
+
+
+.over1 {
+  padding-bottom: 5vw;
+}
+
+.over2 {
+  padding-bottom: 25vw;
+}
+
+
+
+
+
+
+
+
+
+.price {
+  padding-top: 1vw;
+  padding-bottom: 30px;
+}
+
+.JPY{
+  font-size: 3vw;
+  padding-left: 12vw;
+}
+
+.JPY:after{
+  content: "税込";
+  font-size: 1vw;
+}
+
+
+.view{
+  border: 2px solid #000;
+  background: #fff;
+  font-size: 2vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  color: #000;
+}
+
+.view:hover {
+  color: #fff;
+  background: #000;
+}
+
+.view-position{
+  padding-top: 1vw;
+  margin-left: 2vw;
+}
+
+
+
+/* あああああああああああああああああああああああああああああああああああああああああああああああああ */
+
+
+
+
+.item-number02 {
+  text-align: left;
+  font-size: 2.5vw;
+  text-decoration : underline;
+  padding-left: 6.5vw;
+}
+
+.item-name02 {
+  text-align: left;
+  font-size: 2.5vw;
+  /* padding-top: 2vw; */
+
+  margin-bottom: 3vw;
+}
+
+
+
+
+
+.item02-font{
+  width:100%;
+  margin-right: 62vw;
+  margin-left: 3vw;
+  line-height: 4vw;
+  font-size: 1vw;
+  text-align: left;
+}
+
+
+
+.item02-position{
+  text-align: left;
+  background-size: cover;
+  padding-top: 0;
+  padding-left: 3vw;
+  padding-bottom: 15vw;
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.item-number01 {
+text-align: left;
+font-size: 3vw;
+text-decoration : underline;
+padding-top: 5vw;
+padding-left: 3.5vw;
+padding-bottom: 2vw;
+}
+
+
+.item-name01{
+font-size: 3vw;
+padding-left: 3vw;
+}
+
+
+
+
+
+
+
+
+.flex{
+display: flex;
+padding-top: 0;
+padding-left: 3vw;
+padding-right: 3vw;
+justify-content: space-between;
+}
+
+.item-img01{
+width: auto;
+}
+
+.item-img01 img{
+width: 100%;
+height: 100%;
+}
+
+.ex-font{
+/* width: calc(100% -230px); */
+font-size: 1.5vw;
+padding-left: 3vw;
+padding-right: 3vw;
+line-height: 4vw;
+width: 50%;
+}
+
+
+
+.price01 {
+/* padding-top: 2vw;
+padding-bottom: 30px; */
+text-align: center;
+padding-top: 10vw;
+}
+
+.JPY01{
+font-size: 3vw;
+padding-left: 12vw;
+}
+
+.JPY01:after{
+content: "税込";
+font-size: 1vw;
+}
+
+
+.view01{
+border: 2px solid #000;
+background: #fff;
+font-size: 2vw;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 50px;
+padding-right: 50px;
+text-decoration: none;
+color: #000;
+}
+
+.view01:hover {
+color: #fff;
+background: #000;
+}
+
+.view01-position{
+
+text-align: right;
+padding-top: 1vw;
+margin-right: 7vw;
+}
+
+
+
+
+
+
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+top:-120%;
+  left:0;
+width:100%;
+  height: 100vh;/*ナビの高さ*/
+background: #CEE5D0;
+  /*動き*/
+transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  top: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+list-style: none;
+  text-align: center;
+  font-size: 2vw;
+  /* text-decoration:underline; */
+}
+
+#g-nav li a{
+color: #fff;
+text-decoration: none;
+padding:25px;
+display: block;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+
+position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+top:10px;
+right: 0;
+cursor: pointer;
+  width: 100px;
+  height:100px;
+
+}
+
+
+/*×に変化*/
+.openbtn span{
+  display: inline-block;
+  transition: all .5s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+background-color: #001E43;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+top:16px;
+}
+
+.openbtn span:nth-of-type(2) {
+top:30px;
+}
+
+.openbtn span:nth-of-type(3) {
+top:44px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 11px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 11px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+/*      ハンバーガー li大きさ      */
+#g-nav li{
+list-style: none;
+  text-align: center;
+  font-size: 8vw;
+  /* text-decoration:underline; */
+}
+
+
+
+
+
+.haikei{
+background-image: url(../index-img/haikei1-1.jpg);
+height: 600px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+  .flex{
+    display:block;
+
+    
   }
-  
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  
-  header {
-    padding: 10px 2% 10px;
-    position: fixed;
-    top: 0;
-    left: 15px;
-    width: 100%;
+
+  .flex01{
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
-  
-  .noodle {
-    margin: 0;
-    padding: 6px;
-    font-size: 45px;
-    color: #001E43;
-  }
-  
-  .haikei{
-    background-image: url(../index-img/haikei.jpg);
-    background-size:cover;
-    background-position:center center;
-    background-repeat: no-repeat;
-    width:100%;
-    height: 50vw;
-  }
-  
-  .haikei2-position{
-    text-align: left;
-    background-size: cover;
-    padding-top: 30vw;
-    padding-left: 3vw;
-    padding-bottom: 15vw;
-    display: flex;
-    margin: 20px auto;
-    width: 100%;
-  }
-  
-  
-  /* 黄金比 */
-  img{
-    width: 100%;
-    height: auto;
-  }
-  
-  .haikei2-img{
-    width:100%;
-    height:100%;
-    /* vertical-align:bottom; */
-  }
-  
-  
-  .haikei2-font{
-    width:100%;
-    /* margin: 10px 20px; */
-    margin-right: 3vw;
-    margin-left: 3vw;
-    line-height: 7vw;
-    font-size: 1.5vw;
-  }
-  
-  
-  
-  .learn{
-    border: 2px solid #001E43;
-    background: #fff;
-    font-size: 2vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    color: #001E43;
-  }
-  
-  .learn:hover {
-    color: #fff;
-    background: #001E43;
-  }
-  
-  .learn-position{
-    padding-top: 3vw;
-    margin-left: 2vw;
-  }
-  
-  .item-var{
-    font-size: 4vw;
-    padding-left: 50px;
-  }
-  
-  
-  .item-var:before{
-    content: "kitchen";
-    font-size: 2vw;
-    margin-right: 50px;
-  }
-  
-  .name{
-    text-align: center;
-    padding-bottom: 3vw;
-  
-  }
-  
-  .haikei3{
-    background-image: url(../index-img/haikei3-2.jpg);
-    background-size:cover;
-    background-position:center center;
-    background-repeat: no-repeat;
-    width:100%;
-    height: 43vw;
-  }
-  
-  .items{
-    font-size: 4vw;
-    padding-top: 30vw;
-    padding-left: 5vw;
-  }
-  
-  .goods{
-    font-size: 3vw;
-    padding-top: 10vw;
-    padding-left: 8vw;
-    padding-bottom: 5vw;
-  }
-  
-  
-  .item-name1{
-    font-size: 3vw;
-    padding-left: 12vw;
-  }
-  
-  .item-name1:before{
-    content: "01. ";
-    font-size: 4vw;
-  }
-  
-  .item-name2{
-    font-size: 3vw;
-    padding-left: 12vw;
-  }
-  
-  .item-name2:before{
-    content: "02. ";
-    font-size: 4vw;
-  }
-  
-  .item-name3{
-    font-size: 3vw;
-    padding-left: 12vw;
-  }
-  
-  .item-name3:before{
-    content: "03. ";
-    font-size: 4vw;
-  }
-  
-  .item-name4{
-    font-size: 3vw;
-    padding-left: 12vw;
-  }
-  
-  .item-name4:before{
-    content: "04. ";
-    font-size: 4vw;
-  }
-  
-  
-  /* 雑貨紹介の下線をどうしても引きたい
-  .under-line > p{
-    border-bottom: solid 3px #87CEFA;
-  } */
-  
-  
-  .item-name {
-    padding-top: 40px;
-  }
-  
-  
-  .over1 {
-    padding-bottom: 5vw;
-  }
-  
-  .over2 {
-    padding-bottom: 25vw;
-  }
-  
-  .item-number {
-    font-size: 3vw;
-    text-decoration : underline;
-    padding-left: 7vw;
-  
-  }
-  
-  .item-name01 {
-    font-size: 3vw;
-    padding-top: 3vw;
-    padding-left: 6vw;
-  }
-  
-  
-  
-  
-  .item01-position {
-  
-    background-size: cover;
-    padding-top: 3vw;
-    padding-left: 6vw;
-    padding-bottom: 15vw;
-    display: flex;
-    margin: 20px auto;
-    width: 100%;
-  }
-  
-  
-  .item01-img{
-  
-    background-size: cover;
-    padding-top: 3vw;
-    padding-left: 50vw;
-    padding-right: 6vw;
-    /* vertical-align:bottom; */
-  }
-  
-  
-  .item01-font{
-  
-    /* margin: 10px 20px; */
-    margin-right: 8vw;
-    margin-left: 5vw;
-    line-height: 5vw;
-    font-size: 1vw;
-    padding-top: 2vw;
-  }
-  
-  .left{
-  
-    font-size: 1.5vw;
-    padding-right:8vw;
-    margin-left: 50vw;
-    line-height:5vw;
-  }
-  
-  
-  
-  .price {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .price01 {
     padding-top: 1vw;
     padding-bottom: 30px;
   }
   
-  .JPY{
-    font-size: 3vw;
-    padding-left: 12vw;
+  .JPY01{
+    font-size: 6vw;
   }
   
-  .JPY:after{
+  .JPY01:after{
     content: "税込";
-    font-size: 1vw;
-  }
-  
-  
-  .view{
-    border: 2px solid #000;
-    background: #fff;
     font-size: 2vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    color: #000;
   }
-  
-  .view:hover {
-    color: #fff;
-    background: #000;
-  }
-  
-  .view-position{
-    padding-top: 1vw;
-    margin-left: 2vw;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*========= ナビゲーションのためのCSS ===============*/
-  
-  #g-nav{
-    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-    position:fixed;
-    z-index: 999;
-    /*ナビのスタート位置と形状*/
-  top:-120%;
-    left:0;
-  width:100%;
-    height: 100vh;/*ナビの高さ*/
-  background: #CEE5D0;
-    /*動き*/
-  transition: all 0.6s;
-  }
-  
-  /*アクティブクラスがついたら位置を0に*/
-  #g-nav.panelactive{
-    top: 0;
-  }
-  
-  /*ナビゲーションの縦スクロール*/
-  #g-nav.panelactive #g-nav-list{
-    /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100vh;/*表示する高さ*/
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  /*ナビゲーション*/
-  #g-nav ul {
-    /*ナビゲーション天地中央揃え*/
-    position: absolute;
-    z-index: 999;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  }
-  
-  /*リストのレイアウト設定*/
-  
-  #g-nav li{
-  list-style: none;
+
+
+
+  .view01-position{
     text-align: center;
-    font-size: 2vw;
-    /* text-decoration:underline; */
   }
-  
-  #g-nav li a{
-  color: #fff;
-  text-decoration: none;
-  padding:25px;
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  }
-  
-  /*========= ボタンのためのCSS ===============*/
-  .openbtn{
-  
-  position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-  top:10px;
-  right: 0;
-  cursor: pointer;
-    width: 100px;
-    height:100px;
-  
+
+
+  .item-number01 {
+    text-align: left;
+    font-size: 6vw;
+    text-decoration : underline;
+    padding-top: 5vw;
+    padding-left: 3.5vw;
+    padding-bottom: 2vw;
   }
   
   
-  /*×に変化*/
-  .openbtn span{
-    display: inline-block;
-    transition: all .5s;
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-  background-color: #001E43;
-    width: 45%;
+  .item-name01{
+    font-size: 7vw;
+    padding-left: 3vw;
   }
   
-  .openbtn span:nth-of-type(1) {
-  top:16px;
+  .ex-font{
+    /* width: calc(100% -230px); */
+    font-size: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    line-height: 8vw;
+    width: 100%;
   }
   
-  .openbtn span:nth-of-type(2) {
-  top:30px;
+
+
+  .view01-position{
+
+    text-align: center;
+    padding-top: 1vw;
   }
   
-  .openbtn span:nth-of-type(3) {
-  top:44px;
-  }
-  
-  .openbtn.active span:nth-of-type(1) {
-    top: 18px;
-    left: 11px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 50%;
-  }
-  
-  .openbtn.active span:nth-of-type(2) {
-  opacity: 0;
-  }
-  
-  .openbtn.active span:nth-of-type(3){
-    top: 30px;
-    left: 11px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 50%;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}

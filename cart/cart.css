@@ -1,0 +1,9 @@
+.a{
+    padding: 1em;
+    margin: 1em auto;
+    font-weight: lighter;
+    border: solid 1px;
+    border-radius: 8px ;
+    width: 75vw;
+    height: 65vh;
+}

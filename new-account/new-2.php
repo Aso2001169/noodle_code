@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html la<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -18,9 +19,11 @@
   </header>
   <h1>新規登録</h1>
   <div class="">
-    <form method="post" action="result.php">
+    <form method="post" action="check.php">
       <div class="formbox">
         <div class="label">
+        
+
           <label for="one">氏名:</label>
         </div>
         <div>
@@ -41,35 +44,62 @@
           <label for="three">生年月日:</label>
         </div>
         <div class="formboxBirth">
-          <p><input type="number" name="year" id="three" min="1900" max="2022">年</p>
-          <p><input type="number" name="mon" id="three" min="1" max="12">月</p>
+          <p><input type="number" name="year" id="three" min="1900" max="2022" >年</p>
+          <p><input type="number" name="mon" id="three" min="1" max="12" >月</p>
           <p><input type="number" name="day" id="three" min="1" max="31">日</p>
         </div>
       </div>
-        <div class="formbox">
-          <div class="label">
-            <label for="for">郵便番号:</label>
-          </div>
-          <div class="formboxBirth">
-            <p><input type="text" name="postal" id="for">-</p>
-            <p><input type="text" name="postalA" id="for"></p>
-          </div>
-        </div>
+        
+        <!-- 追加したやつ -->
+        
+        <div class="h-adr">
 
+                <div class="formbox">
+                  <div class="label">
+                    <span class="p-country-name"style="display:none;">Japan</span>
+          
+                    郵便番号（-を含む8桁） 
+                  </div>
+                  <div>
+                    <input type="text"  name="postal" class="p-postal-code"size="8"maxlength="8">
+                  </div>
+                </div>
+                  <div class="formbox">
+                    <div class="label">
+                      <!-- <span class="p-country-name"style="display:none;">Japan</span>
+            
+                      郵便番号（-を除く7桁）  -->
+                    </div>
+                    <div>
+                      <input type="text" name="addres1" class="p-region">
+  
+                    </div>
+                  </div>
+                  <div class="formbox">
+                    <div class="label">
+                      <!-- <span class="p-country-name"style="display:none;">Japan</span>
+            
+                      郵便番号（-を除く7桁）  -->
+                    </div>
+                    <div>
+                      <input type="text" name="addres2"  class="p-locality p-street-address p-extended-address">
+  
+                    </div>
+                  </div>
+
+                </div>
+          
+          
+          
+          
+          <!-- </div> -->
+        
         <div class="formbox">
           <div class="label">
             <label for="five">電話番号:</label>
           </div>
           <div>
             <input type="tel" name="phon" id="five">
-          </div>
-        </div>
-        <div class="formbox">
-          <div class="label">
-            <label for="eight">住所:</label>
-          </div>
-          <div>
-            <input type="text" name="address" id="eight">
           </div>
         </div>
 
@@ -87,7 +117,7 @@
             <label for="six-2">メールアドレス:</label>
           </div>
           <div>
-            <input type="mail" id="six-2">
+            <input type="mail" name="" id="six-2">
           </div>
         </div>
 
@@ -105,11 +135,14 @@
             <label for="seven-2">パスワード:</label>
           </div>
           <div>
-            <input type="password" id="seven-2">
+            <input type="mail" name="" id="seven-2">
           </div>
         </div>
+        <div class="first"></div>
         <button type="submit">次へ</button>
+        
     </form>
   </div>
+  <script src="https://yubinbango.github.io/yubinbango/yubinbango.js"charset="UTF-8"></script>
 </body>
 </html>
