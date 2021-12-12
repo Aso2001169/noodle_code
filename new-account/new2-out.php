@@ -13,12 +13,15 @@
   <title>Document</title>
 </head>
 <body>
+  
   <header>
-    <a class="back" href="">戻る</a>
+  <?php
+echo '<a class="back" href="' . $_SERVER['HTTP_REFERER'] . '">前に戻る</a>';
+?>
   </header>
-  <h1>新規登録</h1>
+  <h1>登録確認画面</h1>
   <div class="">
-    <form method="post" action="new2-out.php">
+    <form method="post" action="result.php">
       <div class="formbox">
         <div class="label">
         
@@ -26,7 +29,9 @@
           <label for="one">氏名:</label>
         </div>
         <div>
-          <input type="text" name="name" id="one">
+            <?php  
+            echo '<input type="text" name="name" id="one" value="',$_POST['name'],'">';
+            ?>
         </div>
       </div>
 
@@ -35,7 +40,10 @@
           <label for="two">ユーザー名:</label>
         </div>
         <div>
-          <input type="text" name="user" id="two">
+        <?php  
+            echo '<input type="text" name="user" id="two" value="',$_POST['user'],'">';
+            ?>
+          
         </div>
       </div>
       <div class="formbox">
@@ -43,9 +51,11 @@
           <label for="three">生年月日:</label>
         </div>
         <div class="formboxBirth">
-          <p><input type="number" name="year" id="three" min="1900" max="2022" >年</p>
-          <p><input type="number" name="mon" id="three" min="1" max="12" >月</p>
-          <p><input type="number" name="day" id="three" min="1" max="31">日</p>
+        <?php  
+            echo '<p><input type="number" name="year" id="three" min="1900" max="2022" value="',$_POST['year'],'">年</p>';
+            echo '<p><input type="number" name="mon" id="three" min="1" max="12" value="',$_POST['mon'],'">月</p>';
+            echo '<p><input type="number" name="day" id="three" min="1" max="31" value="',$_POST['day'],'">日</p>';
+            ?>
         </div>
       </div>
         
@@ -55,12 +65,14 @@
 
                 <div class="formbox">
                   <div class="label">
-                    <span class="p-country-name"style="display:none;">Japan</span>
-          
-                    郵便番号（-を含む8桁） 
+        
+                  郵便番号（-を含む8桁）
+                  
                   </div>
                   <div>
-                    <input type="text" name="postal" class="p-postal-code" size="8" maxlength="8">
+                  <?php  
+            echo '<input type="text" name="postal" class="p-postal-code" value="',$_POST['postal'],'">';
+            ?>    
                   </div>
                 </div>
                   
@@ -71,7 +83,10 @@
                       郵便番号（-を除く7桁）  -->
                     </div>
                     <div>
-                      <input type="text" name="sddress"  class="p-locality p-street-address p-extended-address">
+                    <?php
+            echo '<input type="text" name="sddress"  class="p-locality p-street-address" value="',$_POST['sddress'],'">';
+            ?> 
+                      
   
                     </div>
                   </div>
@@ -88,7 +103,10 @@
             <label for="five">電話番号:</label>
           </div>
           <div>
-            <input type="tel" name="phon" id="five">
+          <?php
+            echo '<input type="tel" name="phon" id="five" value="',$_POST['phon'],'">';
+            ?> 
+            
           </div>
         </div>
 
@@ -97,62 +115,29 @@
             <label for="six">メールアドレス:</label>
           </div>
           <div>
-            <input type="email" name="mail" id="six">
+          <?php
+            echo '<input type="mail" name="mail" id="six" value="',$_POST['mail'],'">';
+            ?> 
           </div>
         </div>
        
-        <div id="app">
-          <div class="formbox">
-            <p  v-if="isInvalidKei" class="kakuninyou">パスワードが一致しません</p>
-            <div class="label">
-              <label for="seven">パスワード（4文字以上32文字以下）:</label>
-              <p v-if="passcnt">4文字以上32文字以下である必要があります</p>
-            </div>
-            <div>
-              <input v-model="tanka" type="password" name="pass" id="seven" maxlength="32" minlength="4">
-            </div>
+
+        <div class="formbox">
+          <div class="label">
+            <label for="seven">パスワード:</label>
           </div>
-          <div class="formbox">
-            <div class="label">
-              <p class="kakuninyou">確認用</p>
-              <label for="seven-2">パスワード:</label>
-            </div>
-            <div>
-              <input v-model="nin" type="password" name="pass2" id="seven-2">
-            </div>
+          <div>
+          <?php
+            echo '<input type="password" name="pass" id="seven" value="',$_POST['pass'],'">';
+            ?> 
           </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script>
-          new Vue({
-  el: '#app',
-  data(){
-    return{
-      tanka:'',
-      nin:''
-    };
-  },
-  computed:{
-    // パスワード一致確認
-    isInvalidKei(){
-      return this.nin!=this.tanka;
-    },
-    // パスワード文字数確認
-    passcnt(){
-      return this.tanka.length>33 || this.tanka.length<4;
-    }
-  }
-})
-        </script>
+       
         <div class="first"></div>
-        
-        
-
-
-        <button type="submit">次へ</button>
+        <button type="submit">登録</button>
         
     </form>
   </div>
-  <script src="https://yubinbango.github.io/yubinbango/yubinbango.js"charset="UTF-8"></script>
+
 </body>
 </html>

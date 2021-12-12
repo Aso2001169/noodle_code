@@ -1,7 +1,7 @@
 header{
   display: flex;
   width: 98vw;
-  border-bottom: 3px solid #aaabab;
+  border-bottom: 3px solid #fff5e0;
   padding: 10px;
 }
 .header-L{
@@ -21,17 +21,18 @@ header{
   width: 70vw;
   margin: 20px auto;
   padding: 20px;
-  background-color: rgb(223, 218, 211);
+  background-color: #e3dfdc;
 }
 ul{
   list-style: none;
 }
 .topmenu-a:hover{
-  background-color: rgb(112, 109, 105);
+  background-color: #fff5e0;
 
 }
 .fa-home,.fa-arrow-alt-circle-left{
   font-size: 30px;
+  color: #1a0b08;
 }
 .topmenu{
   margin-top: 30px;
@@ -68,4 +69,24 @@ main{
 }
 .marchandise-table-name{
   width: 60%;
+}
+.noaccount{
+  display: block;
+  width: auto;
+  height: 400px;
+  margin: 30px auto;
+}
+/* 使い回しできるボタン */
+.commonButton{
+   display: block;
+  background-color: #e3dfdc;
+  width: 70vw;
+  padding: 10px;
+  margin: 20px auto;
+  color: #1a0b08;
+  text-align: center;
+}
+.commonButton:hover{
+  background-color: #fff5e0;
+
 }

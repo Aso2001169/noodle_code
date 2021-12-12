@@ -1,0 +1,31 @@
+.miss{
+  font-size: 80px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+
+.login{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.btn-border {
+    margin-top:50px;
+    border: 2px solid #000;
+    background: #fff;
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .btn-border:hover {
+    color: #fff;
+    background: #000;
+  }
+
+

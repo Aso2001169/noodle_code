@@ -5,15 +5,15 @@ new Vue({
       menus:[
         {
           label:'商品追加・更新・削除',
-          path:'merchandise/index.html'
+          path:'merchandise/index.php'
         },
         {
-          label:'会員管理',
-          path:'user/index.html'
+          label:'[準備中]会員管理',
+          path:'user/index.php'
         },
         {
-          label:'売上管理',
-          path:'Earnings/index.html'
+          label:'[準備中]売上管理',
+          path:'Earnings/index.php'
         }
       ]
     };

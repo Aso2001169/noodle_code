@@ -51,7 +51,7 @@ dbname=LAA1290560-blue;charset=utf8';
                 echo '<br>';
                 echo '<img src="', $row['merchandise_img'], '">';
             }
-            echo '<a href="cart-delete.php?customer_id=777&merchandise_id=', $row['merchandise_id'], '">消去</a>';
+            echo '<a href="cart-delete.php?customer_id=',$_SESSION['customer']['id'],'&merchandise_id=', $row['merchandise_id'], '">消去</a>';
             echo '<br>';
             echo '<br>';
         }

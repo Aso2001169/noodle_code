@@ -35,7 +35,7 @@ function getDb(){
       }
       
       echo '登録しました';
-       echo '<a href=""http://aso2001169.heavy.jp/noodle_code/home-page/"">トップページへ</a>';
+       echo '<a href="http://aso2001169.heavy.jp/noodle_code/home-page/">トップページへ</a>';
  
      }else{
        echo '登録失敗<br />';

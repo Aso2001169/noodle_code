@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1daf298c-10b2-469d-abd1-ea71ded3812b" name="企業連携" url="http://aso2001169.heavy.jp/">
+        <fileTransfer rootFolder="/noodle_code" host="ftp.lolipop.jp" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

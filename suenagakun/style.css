@@ -1,0 +1,107 @@
+header{
+  background-image: url(./haikei.jpg);
+  width: 99vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.Blank{
+  height: 30vh;
+}
+h1{
+  font-size: 30px;
+  width: 90vw;
+  margin: 10px auto;
+  padding-left: 20px;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+.topBox{
+  width: 90vw;
+  border-top :0.5px solid #a4a6a8;
+  border-bottom :0.5px solid #a4a6a8;
+  margin: 10px auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.topBox h2{
+  width: 90%;
+  margin: 30px auto;
+  font-size: 27px;
+  font-family: 'Shippori Mincho B1', serif;
+
+}
+div.topBox ul{
+  list-style-type: decimal
+}
+div.topBox ul li{
+  font-family: 'Shippori Mincho B1', serif;
+  border-bottom :0.5px solid #a4a6a8;
+  padding: 7px;
+  width: 70%;
+  margin-left: 40px;
+}
+
+.item{
+  display: flex;
+  margin-top: 20px;
+}
+.itemleft{
+  width: 47%;
+}
+.itemleft h2{
+  font-size: 26px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.itemright img{
+  width: 53%;
+  height: auto;
+}
+.itemInfo{
+  margin-top: 30px;
+}
+.cnt{
+  font-family: 'M PLUS 1p', sans-serif;
+  border-bottom :0.5px solid #a4a6a8;
+  font-size: 20px;
+  width: 50px;
+  padding-bottom: 10px;
+}
+section{
+  width: 90vw;
+  margin: 10px auto;
+  font-family: 'M PLUS 1p', sans-serif;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.cost{
+  margin-top: 40px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.cost::before{
+  content: "¥";
+  font-size: 30px;
+}
+.cost::after{
+  content: "税込";
+  font-weight: 300;
+  font-size: 10px;
+  margin-left: 20px;
+}
+.cartin{
+  margin-top: 40px;
+  font-size: 14px;
+  padding: 8px;
+  display: inline-block;
+  border: #a4a6a8 0.4px solid;
+ 
+}
+.cartin::after {
+  content: '\e8e4';
+  font-family: 'Material Icons';
+  font-size: 14px;
+  margin-left: 20px;
+  }
