@@ -13,16 +13,16 @@
 <div class="back-color">
     <div class="login">
         <h1>ログイン</h1>
+        <form action="login-judge.php" method="post">
     <div class="ew">
-        <i class="fas fa-user"></i>
-        <input type="text" name="user" value="" placeholder="ユーザー名"><br>
-        <i class="fas fa-lock"></i>
-        <input type="password" name="password" value="" placeholder="パスワード">
+        <label for="username"><i class="fas fa-user"></i></label>
+        <input type="text" name="user" id="username" value="tatara" placeholder="ユーザー名"><br>
+        <label for="password"><i class="fas fa-lock"></i></label>
+        <input type="password" name="password" id="password" value="aaaa" placeholder="パスワード">
     </div>
-    <form action="index.html" method="post">
     <input type="submit" class="btn btn-border" value="ログイン"></input><br>
     </form>
-    <p class="new"><a href="" class="entry">新規作成登録はこちら</a></p>
+    <p class="new"><a href=""><span class="entry">新規作成登録はこちら</a></span></p>
     </div>
 </div>
 </body>

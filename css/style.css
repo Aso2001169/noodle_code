@@ -1,298 +1,317 @@
 * {
-  color: #001E43;
-}
+    color: #001E43;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+ /* * {
+  font-family: 'Shippori Mincho B1', serif;
+ } */
+
+  a{
+    text-decoration: none;
+  }
+  
+/* ヘッダー */
+
+  header {
+    padding: 10px 2% 10px;
+    position: fixed;
+    top: 0;
+    left: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .noodle {
+    margin: 0;
+    padding: 6px;
+    font-size: 45px;
+    color: #001E43;
+  }
+  
+/* ヘッダー背景 */
+
+  .haikei{
+    background-image: url(../index-img/haikei.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 50vw;
+  }
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  .slide{
+    padding-top: 0;
 
-* {
-  box-sizing: border-box;
-}
+    text-align: center;
+    font-size:4vw;
 
-a{
-  text-decoration: none;
-}
+  }
 
 
-header {
-  padding: 10px 2% 10px;
-  position: fixed;
-  top: 0;
-  left: 15px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
+  .haikei2-position{
+    text-align: left;
+    background-size: cover;
+    padding-top: 30vw;
+    padding-left: 3vw;
+    padding-bottom: 15vw;
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+  }
+  
+  
+  /* 黄金比 */
+  img{
+    width: 100%;
+    height: auto;
+  }
+  
+/* アバウト */
+  
+  .haikei2-img{
+    width:100%;
+    height:100%;
+ 
+  }
+  
+  
+  .haikei2-font{
+    width:100%;
+    /* margin: 10px 20px; */
+    margin-right: 3vw;
+    margin-left: 3vw;
+    line-height: 7vw;
+    font-size: 1.5vw;
+  }
+  
+  
+  
 
-.noodle {
-  margin: 0;
-  padding: 6px;
-  font-size: 45px;
-  color: #001E43;
-}
+  
+  .learn-position{
+    padding-top: 3vw;
+    margin-left: 2vw;
+  }
 
-.haikei{
-  background-image: url(../index-img/haikei.jpg);
-  background-size:cover;
-  background-position:center center;
-  background-repeat: no-repeat;
-  width:100%;
-  height: 50vw;
-}
+/* キッチン雑貨 */
 
-.haikei2-position{
-  text-align: left;
-  background-size: cover;
-  padding-top: 30vw;
-  padding-left: 3vw;
-  padding-bottom: 15vw;
-  display: flex;
-  margin: 20px auto;
-  width: 100%;
-}
-
-
-/* 黄金比 */
-img{
-  width: 100%;
-  height: auto;
-}
-
-.haikei2-img{
-  width:100%;
-  height:100%;
-
-}
-
-
-.haikei2-font{
-  width:100%;
-  /* margin: 10px 20px; */
-  margin-right: 3vw;
-  margin-left: 3vw;
-  line-height: 7vw;
-  font-size: 1.5vw;
-}
-
-
-
-.learn{
-  border: 2px solid #001E43;
-  background: #fff;
-  font-size: 2vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-decoration: none;
-  color: #001E43;
-}
-
-.learn:hover {
-  color: #fff;
-  background: #001E43;
-}
-
-.learn-position{
-  padding-top: 3vw;
-  margin-left: 2vw;
-}
-
-.item-var{
-  font-size: 4vw;
-  padding-left: 50px;
-}
+  .item-var{
+    font-size: 4vw;
+    padding-left: 50px;
+  }
+  
+  
+  .item-var:before{
+    content: "kitchen";
+    font-size: 2vw;
+    margin-right: 50px;
+  }
+  
+  .name{
+    text-align: center;
+    padding-bottom: 3vw;
+  }
 
 
-.item-var:before{
-  content: "kitchen";
-  font-size: 2vw;
-  margin-right: 50px;
-}
 
-.name{
-  text-align: center;
-  padding-bottom: 3vw;
 
-}
+
 
 .flex01{
-display: flex;
-background: no-repeat;
-}
-
-
-
-.items{
-  font-size: 4vw;
-  padding-top: 30vw;
-  padding-left: 5vw;
-}
-
-.goods{
-  font-size: 3vw;
-  padding-top: 10vw;
-  padding-left: 8vw;
-  padding-bottom: 5vw;
-}
-
-
-.item-name1{
-  font-size: 3vw;
-  padding-left: 12vw;
-}
-
-.item-name1:before{
-  content: "01. ";
-  font-size: 4vw;
-}
-
-.item-name2{
-  font-size: 3vw;
-  padding-left: 12vw;
-}
-
-.item-name2:before{
-  content: "02. ";
-  font-size: 4vw;
-}
-
-.item-name3{
-  font-size: 3vw;
-  padding-left: 12vw;
-}
-
-.item-name3:before{
-  content: "03. ";
-  font-size: 4vw;
-}
-
-.item-name4{
-  font-size: 3vw;
-  padding-left: 12vw;
-}
-
-.item-name4:before{
-  content: "04. ";
-  font-size: 4vw;
-}
-
-
-/* 雑貨紹介の下線をどうしても引きたい
-.under-line > p{
-  border-bottom: solid 3px #87CEFA;
-} */
-
-
-.item-name {
-  padding-top: 40px;
-}
-
-
-.over1 {
-  padding-bottom: 5vw;
-}
-
-.over2 {
-  padding-bottom: 25vw;
-}
-
-
-
-
-
-
-
-
-
-.price {
-  padding-top: 1vw;
-  padding-bottom: 30px;
-}
-
-.JPY{
-  font-size: 3vw;
-  padding-left: 12vw;
-}
-
-.JPY:after{
-  content: "税込";
-  font-size: 1vw;
-}
-
-
-.view{
-  border: 2px solid #000;
-  background: #fff;
-  font-size: 2vw;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-decoration: none;
-  color: #000;
-}
-
-.view:hover {
-  color: #fff;
-  background: #000;
-}
-
-.view-position{
-  padding-top: 1vw;
-  margin-left: 2vw;
-}
-
-
-
-/* あああああああああああああああああああああああああああああああああああああああああああああああああ */
-
-
-
-
-.item-number02 {
-  text-align: left;
-  font-size: 2.5vw;
-  text-decoration : underline;
-  padding-left: 6.5vw;
-}
-
-.item-name02 {
-  text-align: left;
-  font-size: 2.5vw;
-  /* padding-top: 2vw; */
-
-  margin-bottom: 3vw;
-}
-
-
-
-
-
-.item02-font{
-  width:100%;
-  margin-right: 62vw;
-  margin-left: 3vw;
-  line-height: 4vw;
-  font-size: 1vw;
-  text-align: left;
-}
-
-
-
-.item02-position{
-  text-align: left;
-  background-size: cover;
-  padding-top: 0;
-  padding-left: 3vw;
-  padding-bottom: 15vw;
   display: flex;
-  margin: 20px auto;
-  width: 100%;
+  background: no-repeat;
+  list-style: none;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
+
+
+
+.flex01 > li{
+  margin: 5px;
+}
+
+
+/* おすすめ雑貨紹介 */
+
+  .items{
+    font-size: 4vw;
+    padding-top: 30vw;
+    padding-left: 5vw;
+  }
+
+  .goods{
+    font-size: 3vw;
+    padding-top: 5vw;
+    padding-left: 8vw;
+    padding-bottom: 3vw;
+  }
+
+  .item-name {
+    font-size: 3vw;
+    padding-top: 5vw;
+    padding-left: 15vw;
+    text-decoration: underline
+  }
+
+
+  /* .item-name1{
+    font-size: 3vw;
+    padding-left: 12vw;
+  }
+
+  .item-name1:before{
+    content: "01. ";
+    font-size: 4vw;
+  }
+
+  .item-name2{
+    font-size: 3vw;
+    padding-left: 12vw;
+  }
+
+  .item-name2:before{
+    content: "02. ";
+    font-size: 4vw;
+  }
+
+  .item-name3{
+    font-size: 3vw;
+    padding-left: 12vw;
+  }
+
+  .item-name3:before{
+    content: "03. ";
+    font-size: 4vw;
+  }
+
+  .item-name4{
+    font-size: 3vw;
+    padding-left: 12vw;
+  }
+
+  .item-name4:before{
+    content: "04. ";
+    font-size: 4vw;
+  } */
+
+
+
+  .line{
+    width: 90vw;
+    border-top :1px solid #a4a6a8;
+    border-bottom :1px solid #a4a6a8;
+    margin: 10px auto;
+    padding-bottom: 80px;
+    padding-top: 20px;
+  }
+
+  .line > h2{
+    width: 90%;
+    margin: 30px auto;
+    font-size: 40px;
+
+  }
+  .line > ul{
+    line-height: 10vw;
+    font-size: 50px;
+    list-style-type: decimal
+  }
+
+  .line > ul li{
+    border-bottom :0.5px solid #a4a6a8;
+    padding: 7px;
+    width: 70%;
+    margin-left: 100px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 空白 */
+  .over1 {
+    padding-bottom: 5vw;
+  }
+  
+  .over2 {
+    padding-bottom: 20vw;
+  }
+  
+
+
+
+
+  
+  
+  .view{
+    border: 2px solid #000;
+    background: #fff;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: #001E43;
+  }
+  
+  .view:hover {
+    color: #fff;
+    background: #001E43;
+  }
+  
+  .view-position{
+    padding-top: 1vw;
+    margin-left: 2vw;
+  }
+  
+  
+  
+/* あああああああああああああああああああああああああああああああああああああああああああああああああ */
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,18 +325,18 @@ background: no-repeat;
 
 
 .item-number01 {
-text-align: left;
-font-size: 3vw;
-text-decoration : underline;
-padding-top: 5vw;
-padding-left: 3.5vw;
-padding-bottom: 2vw;
+  text-align: left;
+  font-size: 3.5vw;
+  text-decoration : underline;
+  padding-top: 20vw;
+  padding-left: 3.5vw;
+  padding-bottom: 2vw;
 }
 
 
 .item-name01{
-font-size: 3vw;
-padding-left: 3vw;
+  font-size: 4vw;
+  padding-left: 3vw;
 }
 
 
@@ -328,197 +347,101 @@ padding-left: 3vw;
 
 
 .flex{
-display: flex;
-padding-top: 0;
-padding-left: 3vw;
-padding-right: 3vw;
-justify-content: space-between;
+  display: flex;
+  padding-top: 0;
+  padding-left: 3vw;
+  padding-right: 3vw;
+
 }
 
 .item-img01{
-width: auto;
+  width: auto;
 }
 
-.item-img01 img{
-width: 100%;
-height: 100%;
-}
+/* .item-img01 img{
+  width: 100%;
+  height: 100%;
+} */
 
 .ex-font{
-/* width: calc(100% -230px); */
-font-size: 1.5vw;
-padding-left: 3vw;
-padding-right: 3vw;
-line-height: 4vw;
-width: 50%;
+  /* width: calc(100% -230px); */
+  font-size: 1.5vw;
+  padding-left: 3vw;
+  text-align: justify;
+  line-height: 4vw;
+  width: 50%;
 }
 
 
 
 .price01 {
-/* padding-top: 2vw;
-padding-bottom: 30px; */
-text-align: center;
-padding-top: 10vw;
+  /* padding-top: 2vw;
+  padding-bottom: 30px; */
+  text-align: center;
+  padding-top: 10vw;
 }
 
 .JPY01{
-font-size: 3vw;
-padding-left: 12vw;
+  font-size: 3vw;
+  padding-left: 12vw;
 }
 
 .JPY01:after{
-content: "税込";
-font-size: 1vw;
+  content: "税込";
+  font-size: 1vw;
+}
+
+.JPY01:before{
+  content: "￥";
+  font-size: 3vw;
 }
 
 
 .view01{
-border: 2px solid #000;
-background: #fff;
-font-size: 2vw;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 50px;
-padding-right: 50px;
-text-decoration: none;
-color: #000;
+  border: 2px solid #001E43;
+  background: #fff;
+  font-size: 2vw;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  color: #001E43;
 }
 
 .view01:hover {
-color: #fff;
-background: #000;
+  color: #fff;
+  background: #001E43;
 }
 
 .view01-position{
 
-text-align: right;
-padding-top: 1vw;
-margin-right: 7vw;
+  text-align: right;
+  padding-top: 3vw;
+  margin-right: 7vw;
 }
 
 
 
-
-
-
-
-
-/*========= ナビゲーションのためのCSS ===============*/
-
-#g-nav{
-  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-  position:fixed;
-  z-index: 999;
-  /*ナビのスタート位置と形状*/
-top:-120%;
-  left:0;
-width:100%;
-  height: 100vh;/*ナビの高さ*/
-background: #CEE5D0;
-  /*動き*/
-transition: all 0.6s;
-}
-
-/*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
-  top: 0;
-}
-
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
-  /*ナビの数が増えた場合縦スクロール*/
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100vh;/*表示する高さ*/
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/*ナビゲーション*/
-#g-nav ul {
-  /*ナビゲーション天地中央揃え*/
-  position: absolute;
-  z-index: 999;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
-/*リストのレイアウト設定*/
-
-#g-nav li{
-list-style: none;
+.footer > p{
   text-align: center;
+  padding-top: 20vw;
+  padding-bottom: 10vw;
+}
+
+
+
+
+.order-var{
+  font-size: 4vw;
+  padding-left: 50px;
+}
+
+
+.order-var:before{
+  content: "注文の流れ";
   font-size: 2vw;
-  /* text-decoration:underline; */
-}
-
-#g-nav li a{
-color: #fff;
-text-decoration: none;
-padding:25px;
-display: block;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-font-weight: bold;
-}
-
-/*========= ボタンのためのCSS ===============*/
-.openbtn{
-
-position:fixed;
-  z-index: 9999;/*ボタンを最前面に*/
-top:10px;
-right: 0;
-cursor: pointer;
-  width: 100px;
-  height:100px;
-
-}
-
-
-/*×に変化*/
-.openbtn span{
-  display: inline-block;
-  transition: all .5s;
-  position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-background-color: #001E43;
-  width: 45%;
-}
-
-.openbtn span:nth-of-type(1) {
-top:16px;
-}
-
-.openbtn span:nth-of-type(2) {
-top:30px;
-}
-
-.openbtn span:nth-of-type(3) {
-top:44px;
-}
-
-.openbtn.active span:nth-of-type(1) {
-  top: 18px;
-  left: 11px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 50%;
-}
-
-.openbtn.active span:nth-of-type(2) {
-opacity: 0;
-}
-
-.openbtn.active span:nth-of-type(3){
-  top: 30px;
-  left: 11px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 50%;
+  margin-right: 50px;
 }
 
 
@@ -528,24 +451,169 @@ opacity: 0;
 
 
 
-@media screen and (max-width: 700px) {
+
+
+
+
+  /*========= ナビゲーションのためのCSS ===============*/
+  
+  #g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:-120%;
+    left:0;
+  width:100%;
+    height: 100vh;/*ナビの高さ*/
+  background: #CEE5D0;
+    /*動き*/
+  transition: all 0.6s;
+  }
+  
+  /*アクティブクラスがついたら位置を0に*/
+  #g-nav.panelactive{
+    top: 0;
+  }
+  
+  /*ナビゲーションの縦スクロール*/
+  #g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /*ナビゲーション*/
+  #g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  /*リストのレイアウト設定*/
+  
+  #g-nav li{
+  list-style: none;
+    text-align: center;
+    font-size: 2vw;
+    /* text-decoration:underline; */
+  }
+
+  #g-nav li a{
+  color: #fff;
+  text-decoration: none;
+  padding:25px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  }
+  
+  /*========= ボタンのためのCSS ===============*/
+  .openbtn{
+  
+  position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+  top:10px;
+  right: 0;
+  cursor: pointer;
+    width: 100px;
+    height:100px;
+  
+  }
+  
+  
+  /*×に変化*/
+  .openbtn span{
+    display: inline-block;
+    transition: all .5s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #001E43;
+    width: 45%;
+  }
+  
+  .openbtn span:nth-of-type(1) {
+  top:16px;
+  }
+  
+  .openbtn span:nth-of-type(2) {
+  top:30px;
+  }
+  
+  .openbtn span:nth-of-type(3) {
+  top:44px;
+  }
+  
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 11px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+  }
+  
+  .openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+  }
+  
+  .openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 11px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 700px) {
 
 /*      ハンバーガー li大きさ      */
 #g-nav li{
-list-style: none;
-  text-align: center;
-  font-size: 8vw;
-  /* text-decoration:underline; */
+	list-style: none;
+    text-align: center;
+    font-size: 8vw;
+    /* text-decoration:underline; */
 }
 
 
 
-
+/* 背景画像 */
 
 .haikei{
-background-image: url(../index-img/haikei1-1.jpg);
-height: 600px;
-
+  background-image: url(../index-img/haikei1-1.jpg);
+  height: 600px;
+  
 
 }
 
@@ -554,20 +622,51 @@ height: 600px;
 
 
 
+    .flex{
+      display:block;
+
+      
+    }
+
+/* キッチン雑貨 */
+
+    .flex01{
+      display: flex;
+      flex-direction: column;
+      padding: 3px 3px 3px 3px;
+    }
 
 
 
 
-  .flex{
-    display:block;
-
+    .item-var{
+      font-size: 8vw;
+      padding-left: 50px;
+    }
     
-  }
+    
+    .item-var:before{
+      content: "kitchen";
+      font-size: 4vw;
+      margin-right: 50px;
+    }
 
-  .flex01{
-    display: flex;
-    flex-direction: column;
-  }
+    .order-var{
+      font-size: 8vw;
+      padding-left: 50px;
+    }
+    
+    
+    .order-var:before{
+      content: "注文の流れ";
+      font-size: 4vw;
+      margin-right: 50px;
+    }
+    
+    .name{
+      text-align: center;
+      padding-bottom: 3vw;
+    }
 
 
 
@@ -575,68 +674,135 @@ height: 600px;
 
 
 
+    .items{
+      font-size: 8vw;
+      padding-top: 30vw;
+      padding-left: 5vw;
+    }
+    
+    /* .goods{
+      font-size: 6vw;
+      padding-top: 5vw;
+      padding-left: 8vw;
+      padding-bottom: 3vw;
+    } */
 
-
-
-
-
-
-
-
-
-
-
-  .price01 {
-    padding-top: 1vw;
-    padding-bottom: 30px;
-  }
+    .line > ul{
+      line-height: 10vw;
+      font-size: 30px;
+      list-style-type: decimal
+    }
   
-  .JPY01{
-    font-size: 6vw;
-  }
+    .line > ul li{
+      border-bottom :0.5px solid #a4a6a8;
+      padding: 7px;
+      width: 85%;
+      margin-left: 40px;
+    }
+
+
+
+    .item-name {
+      font-size: 6vw;
+      padding-top: 8vw;
+      padding-left: 2vw;
+      text-decoration: underline
+    }
+
+
+
+
+    .view01{
+      border: 2px solid #000;
+      background: #fff;
+      font-size: 4vw;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-decoration: none;
+      color: #001E43;
+    }
+    
+    .view01:hover {
+      color: #fff;
+      background: #001E43;
+    }
+
+
+
+
+
+
+
+
+    .price01 {
+      padding-top: 80px;
+      padding-bottom: 30px;
+
+    }
+    
+    .JPY01{
+      font-size: 6vw;
+    }
+    
+    .JPY01:after{
+      content: " 税込";
+      font-size: 2vw;
+    }
+
+    .JPY01:before{
+      content: "￥";
+      font-size: 6vw;
+    }
+
+
+
+    .view01-position{
+      text-align: center;
+    }
   
-  .JPY01:after{
-    content: "税込";
-    font-size: 2vw;
-  }
-
-
-
-  .view01-position{
-    text-align: center;
-  }
-
-
-  .item-number01 {
-    text-align: left;
-    font-size: 6vw;
-    text-decoration : underline;
-    padding-top: 5vw;
-    padding-left: 3.5vw;
-    padding-bottom: 2vw;
-  }
+  
+    .item-number01 {
+      text-align: left;
+      font-size: 6vw;
+      text-decoration : underline;
+      padding-top: 30vw;
+      padding-left: 3.5vw;
+      padding-bottom: 2vw;
+    }
+    
+    
+    .item-name01{
+      font-size: 7vw;
+      padding-left: 3vw;
+    }
+    
+    .ex-font{
+      /* width: calc(100% -230px); */
+      font-size: 3vw;
+      text-align: justify;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      line-height: 8vw;
+      width: 100%;
+    }
+    
   
   
-  .item-name01{
-    font-size: 7vw;
-    padding-left: 3vw;
-  }
-  
-  .ex-font{
-    /* width: calc(100% -230px); */
-    font-size: 3vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    line-height: 8vw;
-    width: 100%;
-  }
-  
+    .view01-position{
+
+      text-align: center;
+      padding-top: 1vw;
+    }
+    
 
 
-  .view01-position{
+    .order-position{
+      text-align: center;
+      padding-top: 40vw;
+      padding-bottom: 20vw;
+    }
 
-    text-align: center;
-    padding-top: 1vw;
-  }
-  
+
 }

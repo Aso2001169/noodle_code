@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html la<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -19,7 +18,7 @@
   </header>
   <h1>新規登録</h1>
   <div class="">
-    <form method="post" action="check.php">
+    <form method="post" action="new2-out.php">
       <div class="formbox">
         <div class="label">
         
@@ -61,9 +60,10 @@
                     郵便番号（-を含む8桁） 
                   </div>
                   <div>
-                    <input type="text"  name="postal" class="p-postal-code"size="8"maxlength="8">
+                    <input type="text" name="postal" class="p-postal-code" size="8" maxlength="8">
                   </div>
                 </div>
+                  
                   <div class="formbox">
                     <div class="label">
                       <!-- <span class="p-country-name"style="display:none;">Japan</span>
@@ -71,18 +71,7 @@
                       郵便番号（-を除く7桁）  -->
                     </div>
                     <div>
-                      <input type="text" name="addres1" class="p-region">
-  
-                    </div>
-                  </div>
-                  <div class="formbox">
-                    <div class="label">
-                      <!-- <span class="p-country-name"style="display:none;">Japan</span>
-            
-                      郵便番号（-を除く7桁）  -->
-                    </div>
-                    <div>
-                      <input type="text" name="addres2"  class="p-locality p-street-address p-extended-address">
+                      <input type="text" name="sddress"  class="p-locality p-street-address p-extended-address">
   
                     </div>
                   </div>
@@ -111,34 +100,55 @@
             <input type="mail" name="mail" id="six">
           </div>
         </div>
-        <div class="formbox">
-          <div class="label">
-            <p class="kakuninyou">確認用</p>
-            <label for="six-2">メールアドレス:</label>
+       
+        <div id="app">
+          <div class="formbox">
+            <p  v-if="isInvalidKei" class="kakuninyou">パスワードが一致しません</p>
+            <div class="label">
+              <label for="seven">パスワード（4文字以上32文字以下）:</label>
+              <p v-if="passcnt">4文字以上32文字以下である必要があります</p>
+            </div>
+            <div>
+              <input v-model="tanka" type="password" name="pass" id="seven">
+            </div>
           </div>
-          <div>
-            <input type="mail" name="" id="six-2">
-          </div>
-        </div>
-
-        <div class="formbox">
-          <div class="label">
-            <label for="seven">パスワード:</label>
-          </div>
-          <div>
-            <input type="password" name="pass" id="seven">
-          </div>
-        </div>
-        <div class="formbox">
-          <div class="label">
-            <p class="kakuninyou">確認用</p>
-            <label for="seven-2">パスワード:</label>
-          </div>
-          <div>
-            <input type="mail" name="" id="seven-2">
+          <div class="formbox">
+            <div class="label">
+              <p class="kakuninyou">確認用</p>
+              <label for="seven-2">パスワード:</label>
+            </div>
+            <div>
+              <input v-model="nin" type="password" name="pass2" id="seven-2">
+            </div>
           </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+          new Vue({
+  el: '#app',
+  data(){
+    return{
+      tanka:'',
+      nin:''
+    };
+  },
+  computed:{
+    // パスワード一致確認
+    isInvalidKei(){
+      return this.nin!=this.tanka;
+    },
+    // パスワード文字数確認
+    passcnt(){
+      return this.tanka.length>33 || this.tanka.length<4;
+    }
+  }
+})
+        </script>
         <div class="first"></div>
+        
+        
+
+
         <button type="submit">次へ</button>
         
     </form>

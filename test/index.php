@@ -8,7 +8,6 @@
 </head>
 <body>
   <?php
-
 $dsn='mysql:host=mysql154.phy.lolipop.lan;
   dbname=LAA1290560-blue;charset=utf8';
   $username='LAA1290560';
