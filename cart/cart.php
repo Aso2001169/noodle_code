@@ -7,63 +7,47 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <title>カート</title>
 </head>
 
 <body>
-<button type="button">戻る</button>
+<a class="btn" href="http://aso2001169.heavy.jp/noodle_code/home-page/index.php">戻る</a>
 </form>
 <!--<div style="line-height:1em;">
     <h2 style="text-align: center">Cart</h2>-->
 <div class="cart-center">
     <h2>Cart</h2>
+        
+            
+            
     <div class="a">
+
         <?php
         $dsn='mysql:host=mysql154.phy.lolipop.lan;
 dbname=LAA1290560-blue;charset=utf8';
         $username='LAA1290560';
         $password='green';
         $pdo=new PDO($dsn,$username,$password);
-        $sql=$pdo->prepare("select * from cart where merchandise_id=?");
-        $sql->execute([$_GET['goodsoid']]);
-
-        //ログインしているユーザIDはセッションから取得
-        //ユーザIDをキーにしてカートテーブルから読み込む
-        $sql1='select * from cart where customer_id=?';
-        $sql2='select * from merchandise where merchandise_id=?';
-        $sqlval1 = $pdo->prepare($sql1);
-        $sqlval1->bindValue(1,$_SESSION['customer']['id']);  //ユーザIDセッションから受ける
-        $sqlval1->execute();
-        //カート内の商品IDを配列へ保管
-        foreach ($sqlval1 as $row){
-            $merchandiseid[]=$row['merchandise_id'];
-        }
-        //配列内の商品IDを元に商品テーブルからSELECTし、1件ずつの商品情報を取得し表示する
-        for($i=0;$i<count($merchandiseid);$i++) {
-            echo $merchandiseid[$i];
-            $sqlval2 = $pdo->prepare($sql2);
-            $sqlval2->bindValue(1, $merchandiseid[$i]);  //777としているのはユーザIDセッションから受ける
-            $sqlval2->execute();
-            foreach ($sqlval2 as $row) {
-                echo '商品名　', $row['merchandise_name'];
-                echo '<br>';
-                echo '商品価格', $row['merchandise_cost'], '円';
-                echo '<br>';
-                echo '<img src="', $row['merchandise_img'], '">';
+            $sql=$pdo->prepare('select * from cart,merchandise where merchandise.merchandise_id=cart.merchandise_id and cart.customer_id=?');
+            $sql->execute([$_SESSION['customer']['id']]);
+            foreach ($sql as $row) {
+                echo '<div class="merchandise">';
+                echo '<p class="merchandiseName">',$row['merchandise_name'],'</p>';
+                echo '<div class="imgbox"><img class="mimg" src="', $row['merchandise_img'], '"></div>';
+                echo '<p class="merchandiseCost">',$row['merchandise_cost'],'</p>';
+                echo '<a class="debtn" href="cart-delete.php?customer_id=',$_SESSION['customer']['id'],'&merchandise_id=', $row['merchandise_id'], '">消去</a>';
+                echo '</div>';
             }
-            echo '<a href="cart-delete.php?customer_id=',$_SESSION['customer']['id'],'&merchandise_id=', $row['merchandise_id'], '">消去</a>';
-            echo '<br>';
-            echo '<br>';
-        }
-
         $pdo = null;
         ?>
     </div>
 </div>
 <div class="cart-button">
-<form action="thank-you.php" method="post" >
-    <input type="submit"  value="購入">
-</form>
+    <a href="thank-you.php">購入</a>
 </div>
 </body>
 </html>

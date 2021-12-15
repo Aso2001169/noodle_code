@@ -14,7 +14,7 @@
 </head>
 <body>
   <header>
-    <a class="back" href="">戻る</a>
+    <a class="back" href="login.php">戻る</a>
   </header>
   <h1>新規登録</h1>
   <div class="">
@@ -35,7 +35,7 @@
           <label for="two">ユーザー名:</label>
         </div>
         <div>
-          <input type="text" name="user" id="two">
+          <input type="text" pattern="^[0-9a-zA-Z]+$" name="user" id="two">
         </div>
       </div>
       <div class="formbox">

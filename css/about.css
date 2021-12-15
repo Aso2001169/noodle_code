@@ -86,80 +86,112 @@ header {
 
 .content{
     font-size: 5vw;
-    /* left: 20px;  画像がはみ出る */
 }
 
 
-
-
-.master{
+.haikei2-position{
     text-align: left;
     background-size: cover;
-    padding-top: 2vw;
-    padding-left: 5vw;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     padding-bottom: 15vw;
     display: flex;
     margin: 20px auto;
     width: 100%;
-}
+  }
+  
+  
 
-
-/* 黄金比 */
-img{
+  img{
     width: 100%;
     height: auto;
-}
-
-
-
-.master-img{
-    width:100%;
-    height:100%;
-    vertical-align:bottom;
-}
-
-
-.master-font{
-    width:100%;
-    /* margin: 10px 20px; */
-    margin-right: 5vw;
-    margin-left: 5vw;
-    line-height: 7vw;
-    font-size: 1.5vw;
-}
+  }
+  
+  /* アバウト */
+  
+  .haikei2-img{
+  width:100%;
+  height:100%;
+  
+  }
+  
+  
+  .haikei2-font{
+  width:100%;
+  text-align: justify;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  line-height: 7vw;
+  font-size: 1.5vw;
+  }
 
 /*      CHARM      */
+
+
+.charm-head{
+    padding-top: 5vw;
+    padding-left: 8vw;
+}
+
+.charm-01{
+    font-size: 3vw;
+}
+
+.charm-01:before{
+    content: "01 ";
+    font-size: 5vw;
+}
+
+.charm-02{
+    font-size: 3vw;
+}
+
+.charm-02:before{
+    content: "02 ";
+    font-size: 5vw;
+}
 
 .charm-1{
     font-size: 3vw;
 }
 
-.charm-1:before{
-    content: "01 ";
+.charm1:before{
+    content: "1";
     font-size: 5vw;
 }
 
-.charm-2{
+.charm-exp{
     font-size: 3vw;
 }
 
-.charm-2:before{
-    content: "02 ";
-    font-size: 5vw;
+
+
+.charm-flex{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    justify-content: space-between;
+}
+
+
+.charm-img01 img{
+    width: 100%;
+    height: 100%;
+}
+
+.charm-font{
+    font-size: 1.5vw;
+    padding-top: 6vw;
+    padding-left: 2vw;
+    text-align: justify;
+    line-height: 5vw;
+    width: 90%;
 }
 
 
 
-.charm-position{
-    padding-top: 8vw;
-    padding-left: 6.5vw;
-}
-
-.sample-position{
-    padding-top: 5vw;
-    padding-right: 8vw;
-    padding-left: 8vw;
-}
 
 
 /* 1-2の余白 */
@@ -230,33 +262,24 @@ img{
 /*       */
 
 
-
-
-
-
-
-
-
-
 .flex{
     display: flex;
     padding-top: 0;
     padding-left: 3vw;
     padding-right: 3vw;
     justify-content: space-between;
-  }
-  
-  .item-img01{
+}
+
+.item-img01{
     width: auto;
-  }
-  
-  .item-img01 img{
+}
+
+.item-img01 img{
     width: 100%;
     height: 100%;
-  }
-  
-  .ex-font{
-    /* width: calc(100% -230px); */
+}
+
+.ex-font{
     font-size: 1.5vw;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -276,7 +299,7 @@ img{
 
 .text-98{
     text-align: left;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -441,35 +464,34 @@ img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
 
 /*      ハンバーガー li大きさ      */
 #g-nav li{
 	list-style: none;
     text-align: center;
-    font-size: 8vw;
-    /* text-decoration:underline; */
+    font-size: 6vw;
 }
 
 
 
+/* CONTENT  */
 
+.haikei2-position{
+    text-align: left;
+    padding-top: 3vw;
+    padding-bottom: 15vw;
+    display:block;
+    }
 
-
-
+    .haikei2-font{
+    width:100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: justify;
+    line-height: 7vw;
+    font-size: 3vw;
+    }
 
 
 
@@ -492,84 +514,44 @@ img{
 }
 
 
-
-
-
-
-
-.master{
-    text-align: left;
-    background-size: cover;
-    padding-top: 2vw;
-    padding-left: 5vw;
-    padding-bottom: 15vw;
-    display: flex;
-    margin: 20px auto;
-    width: 100%;
-}
-
-
-/* 黄金比 */
-img{
-    width: 100%;
-    height: auto;
-}
-
-
-.master-img{
-    width:100%;
-    height:100%;
-    vertical-align:bottom;
-}
-
-
-.master-font{
-    width:100%;
-    /* margin: 10px 20px; */
-    margin-right: 5vw;
-    margin-left: 5vw;
-    line-height: 7vw;
-    font-size: 1.5vw;
-}
-
-
-
-
-
-
-
-
-
 /*      CHARM      */
 
-.charm-1{
-    font-size: 7vw;
-}
-
-.charm-1:before{
-    content: "01 ";
-    font-size: 9vw;
-}
-
-.charm-2{
-    font-size: 7vw;
-}
-
-.charm-2:before{
-    content: "02 ";
-    font-size: 9vw;
-}
-
-
-.charm-position{
+.charm-head{
     padding-top: 8vw;
-    padding-left: 6.5vw;
+    padding-left: 8vw;
 }
 
-.sample-position{
-    padding-top: 5vw;
-    padding-right: 0;
-    padding-left: 0;
+.charm-01{
+    font-size: 6vw;
+}
+
+.charm-01:before{
+    content: "01 ";
+    font-size: 10vw;
+}
+
+.charm-02{
+    font-size: 6vw;
+}
+
+.charm-02:before{
+    content: "02 ";
+    font-size: 10vw;
+}
+
+
+.charm-1{
+    font-size: 3vw;
+}
+
+.charm1:before{
+    content: "1";
+    font-size: 8vw;
+}
+
+.charm-exp{
+    font-size: 5vw;
+    padding-bottom: 7vw;
 }
 
 
@@ -582,18 +564,21 @@ img{
 
 
 
+.charm-flex{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+}
 
 
 
-
-
-
-
-
-
-
-
-
+.charm-font{
+    font-size: 3vw;
+    width: 100%;
+    line-height: 7vw;
+}
 
 
 
@@ -605,7 +590,7 @@ img{
         font-size: 8vw;
         padding-top: 20vw;
     }
-    
+
     .story-font{
         font-size: 3vw;
         line-height: 7vw;
@@ -617,13 +602,6 @@ img{
 
 
 
-
-
-
-
-
-
-    
     /* リーダー */
 
 .post1{
@@ -641,8 +619,6 @@ img{
     padding-left: 9vw;
     padding-bottom: 3vw;
 }
-
-/*       */
 
 
 
@@ -665,7 +641,7 @@ img{
     padding-bottom: 3vw;
 }
 
-/*       */
+
 
 
     .flex{
@@ -678,7 +654,6 @@ img{
       }
 
       .ex-font{
-        /* width: calc(100% -230px); */
         font-size: 3vw;
         padding-left: 3vw;
         padding-right: 3vw;
@@ -688,13 +663,14 @@ img{
 
       .text-99{
         text-align: center;
-        padding-top: 100px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
     }
       .text-98{
         text-align: left;
         font-size: 10px;
     }
+
 }

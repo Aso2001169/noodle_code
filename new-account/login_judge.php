@@ -26,16 +26,19 @@ $sql=$pdo->prepare('select * from customer where customer_user=? and customer_pa
 $sql->bindValue(1,$_POST['user']);
 $sql->bindValue(2,$_POST['password']);
 $sql->execute();
-$result=$sql->fetch(PDO::FETCH_ASSOC);
-$_SESSION['customer']=['id'=>$result['id'],'user'=>$result['customer_name']];
+foreach($sql as $row){
+  $_SESSION['customer']=['id'=>$row['id'],'user'=>$row['customer_name']];
+
+}
+
 
 
 if(isset($_SESSION['customer'])){
-print_r($_SESSION['customer']);
+// print_r($_SESSION['customer']);
 }
 
 if(isset($_SESSION['customer'])){
-    echo '<script>location.href="http://aso2001378.boo.jp/team/index/index.php/";</script>';
+     echo '<script>window.location.href="http://aso2001169.heavy.jp/noodle_code/home-page/index.php";</script>';
 }else{
     echo '<p>IDまたはPWが違います</p><br>';
     echo '<p class="login"><a class="btn-border" href="login.php">ログインへ戻る</a></p>';

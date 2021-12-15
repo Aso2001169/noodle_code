@@ -22,7 +22,7 @@
     </div>
     <input type="submit" class="btn btn-border" value="ログイン"></input><br>
     </form>
-    <p class="new"><a href=""><span class="entry">新規作成登録はこちら</a></span></p>
+    <p class="new"><a class="entry" href="new-2.php">新規作成登録はこちら</a></p>
     </div>
 </div>
 </body>

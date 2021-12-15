@@ -34,7 +34,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
 
-<title>Document</title>
+<title>TOP PAGE</title>
 </head>
 <header class="noodle">
     <p>NOODLE</p>
@@ -44,9 +44,9 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <ul>
 <li><?php echo $_SESSION['customer']['user'],'さん'; ?></li>
 <li><a href="#">TOP</a></li>
-<li><a href="about.html">ABOUT</a></li>
-<li><a href="#">CART</a></li>
-<li><a href="#">MY PAGE</a></li>
+<li><a href="about.php">ABOUT</a></li>
+<li><a href="../cart/cart.php">CART</a></li>
+<li><a href="my-page.php">[準備中]MY PAGE</a></li>
 </ul>
 </div>
 </nav>
@@ -57,17 +57,20 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
   <!-- 背景画像 -->
 
     <div class="haikei"></div>
+<?php
+if(isset($_SESSION['customer'])){
 
+?>
 <!-- アバウト -->
 
-    <div class="haikei2-position">
+  <div class="haikei2-position">
       <div class="haikei2-img">
 
       <img src="../index-img/haikei2.jpg" width="650" height="700" alt="">
       </div>
       <div class="haikei2-font">
-          <p>文を変える</p>
-          <p class="learn-position"><a href="about.html" class="view">Learn more ⇀</a></p>
+          <p>私たちは主に雑貨の販売を行っております。週毎、私たちのおすすめする雑貨商品を4つほど紹介しています。生活雑貨やインテリア雑貨など他にも幅広くとり扱っておりますので必ずお客様の求める商品がここにあります。</p>
+          <p class="learn-position"><a href="about.php" class="learn">Learn more ⇀</a></p>
       </div>
   </div>
 
@@ -75,12 +78,12 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <!-- キッチン雑貨 -->
 
 
-  <p class="name"><span class="item-var"><br>Items</span></p>
+  <p class="name"><span class="item-var"><br>GOODS</span></p>
 
 <ul class="flex01">
-  <li><img src="../index-img/haikei3-1.jpg"  alt="調理器具"></li>
-  <li><img src="../index-img/haikei3-2.jpg"  alt="食器類"></li>
-  <li><img src="../index-img/haikei3-3.jpg"  alt="台所用品"></li>
+  <li><img src="../index-img/haikei3-1.jpg"  alt="インテリア雑貨"></li>
+  <li><img src="../index-img/haikei3-2.jpg"  alt="キッチン雑貨"></li>
+  <li><img src="../index-img/haikei3-3.jpg"  alt="生活雑貨"></li>
 </ul>
 
 
@@ -103,6 +106,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 
 
 <!-------商品------->
+
 <div class="over2"></div>
 
 <?php
@@ -126,13 +130,13 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
             echo '</div>';
             echo '</div>';
             echo '<div class="view01-position">';
-            echo '<a class="view01" name="cart" href="cart-insert.php?goodsid=',$row['merchandise_id'],'">カートに入れる</a>';
+            echo '<a class="view01" name="cart" href="../cart/cart-insert.php?goodsid=',$row['merchandise_id'],'">カートに入れる</a>';
             echo '</div>';
           echo '</section>';
           $i++;
         }
 
-    
+
   ?>
 
 <!------- 注文の流れ ------->
@@ -143,16 +147,16 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
   <p class="name"><span class="order-var"><br>Order Flow</span></p>
 
 <ul class="flex01">
-  <li><img src="../index-img/order-1.jpg"  alt="調理器具"></li>
-  <li><img src="../index-img/order-2.jpg"  alt="食器類"></li>
-  <li><img src="../index-img/order-3.jpg"  alt="台所用品"></li>
+  <li><img src="../index-img/order-1.jpg"  alt=""></li>
+  <li><img src="../index-img/order-2.jpg"  alt=""></li>
+  <li><img src="../index-img/order-3.jpg"  alt=""></li>
 </ul>
 
 
 <!------- お問い合わせ ------->
 
 <footer class="footer">
-  <p><a href="thank-you.html"><span class="view01">お問い合わせ</span></a></p>
+  <p><a href="number2.php"><span class="view01">お問い合わせ</span></a></p>
 </footer>
 
 
@@ -164,9 +168,13 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/js/5-1-11.js"></script>
 <!----------------------->
+<?php
+      }else{
+        echo '<a class="loginbtn" href="http://aso2001169.heavy.jp/noodle_code/new-account/login.php">このサイトはログインしてからご覧ください</a>';
+      }
+      ?>
 </body>
 </html>
-
 
 
 

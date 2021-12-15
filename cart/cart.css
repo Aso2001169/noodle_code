@@ -1,9 +1,109 @@
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.cart-button{
+    text-align: center;
+    border-bottom :1px solid #000;
+    background-color: #000;
+    color: white;
+    padding: 7px;
+    display: block;
+    border-radius: 8px;
+    width: 80vw;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.cart-button >a{
+    color: white;
+}
+
+img{
+    width:125px;
+    height: auto;
+}
+
+.mimg{
+    width: 98%;
+    height: auto;
+    margin: 30px auto;
+}
+.merchandiseName{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    height: 80px;
+}
+.merchandiseCost{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+
+}
+.merchandiseCost::before{
+    content: "¥";
+    font-size: 20px;
+}
+.merchandiseCost::after{
+    content: "税込";
+    font-size: 10px;
+}
+
+
+.cart-center > h2{
+    text-align: center;
+    border-bottom :1px solid #000;
+    width: 110px;
+    margin: 30px auto;
+}
 .a{
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    gap: 5px;
+    border: solid 1px;
+    border-radius: 8px ;
     padding: 1em;
     margin: 1em auto;
     font-weight: lighter;
-    border: solid 1px;
-    border-radius: 8px ;
-    width: 75vw;
-    height: 65vh;
+
+}
+.merchandise{
+    width: 100%;
+}
+.imgbox{
+    height: 40vh;
+}
+.btn{
+    border-bottom :1px solid #000;
+    background-color: #000;
+    color: white;
+    padding: 7px;
+    display: block;
+    border-radius: 8px;
+    width: 200px;
+}
+.debtn{
+    border-bottom :1px solid #000;
+    background-color: #000;
+    color: white;
+    padding: 7px;
+    display: block;
+    border-radius: 8px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    .a{
+        display: block;
+        width: 80vw;
+        border: solid 1px;
+        border-radius: 8px ;
+        padding: 1em;
+        margin: 1em auto;
+        font-weight: lighter;
+    
+    }
+    
 }

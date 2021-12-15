@@ -1,5 +1,21 @@
+<?php
+session_start();
+?>
+
+
+<?php
+$dsn='mysql:host=mysql154.phy.lolipop.lan;
+  dbname=LAA1290560-blue;charset=utf8';
+  $username='LAA1290560';
+  $password='green';
+  $pdo=new PDO($dsn,$username,$password);
+?>
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +23,21 @@
 <link rel="stylesheet" href="../css/about.css">
 <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-<title>Document</title>
+<title>About</title>
 </head>
 
 <!-- ヘッダー -->
 
 <header class="noodle">
-    <p><a href="index.html">NOODLE</a></p>
+    <p>NOODLE</p>
 <div class="openbtn"><span></span><span></span><span></span></div>
 <nav id="g-nav">
-<!-- <div id="g-nav-list">ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除 -->
+
 <ul>
-<li><a href="index.html">TOP</a></li>
+<li><?php echo $_SESSION['customer']['user'],'さん'; ?></li>
+<li><a href="../home-page/index.php">TOP</a></li>
 <li><a href="#">ABOUT</a></li>
-<li><a href="#">CART</a></li>
+<li><a href="../cart/cart.php">CART</a></li>
 <li><a href="#">MY PAGE</a></li>
 </ul>
 </div>
@@ -41,7 +58,7 @@
 <main>
 <p class="midashi">あこがれる日常生活に</p>
 <div class="text">
-<p class="text1">雑貨はプレゼントにも最適ーあああああああああああああああああああああああああああああああああああああああ</p>
+<p class="text1">雑貨はプレゼントにも最適です。お揃いの品や思い出の品に最適です。</p>
 </div>
 
 <!--      CONTENT      -->
@@ -51,16 +68,24 @@
     <p class="content">CONTENT</p>
 </div>
 </div>
-<div class="master">
-    <div class="master-img">
-    <img src="../about-img/master.png" width="650" height="750" alt="">
+
+<div class="haikei2-position">
+    <div class="haikei2-img">
+
+    <img src="../about-img/master.png" width="650" height="700" alt="">
     </div>
-    <!-- <img src="../about-img/group528.jpg" alt=""> -->
-    <div class="master-font">
-        <p class="font-right">私たちは主に雑貨の販売を行っています。お客様に最高の商品をお届けするという事をモットーにしています。主な取り組みは、私生活をより良いものにする事のできる当店おすすめの雑貨を週ごとに4つ販売しております。更にはお客様が安心して購入できる様、ユーザーが迷わないシンプルなデザイン、イメージ画像を使った配送手順の説明など細部にまで力をいれております。</p>
+    <div class="haikei2-font">
+        <p>私たちは主に雑貨の販売を行っています。お客様に最高の商品をお届けするという事をモットーにしています。主な取り組みは、私生活をより良いものにする事のできる当店おすすめの雑貨を週ごとに4つ販売しております。更にはお客様が安心して購入できる様、ユーザーが迷わないシンプルなデザイン、イメージ画像を使った配送手順の説明など細部にまで力をいれております。</p>
     </div>
 </div>
 </main>
+
+
+
+
+
+
+
 
 
 <!--      CHARM      -->
@@ -73,22 +98,33 @@
 
 <!--      01 週替わりの商品      -->
 
-    <div class="charm-position">
-        <p><span class="charm-1">週替わりの商品</span></p>
-    </div>
-    <div class="sample-position">
-        <img src="../about-img/sample.jpg" alt="">
-    </div>
+
+    <p class="charm-head"><span class="charm-01">週替わりの商品</span></p>
+    <div class="charm-flex">
+        <div class="charm-img01">
+            <img src="../about-img/haikei2.jpg"  alt="">
+        </div>
+        <div class="charm-font">
+            <p class="charm-exp"><span class="charm1">週間毎に商品が変わる</span></p>
+            <p>当店おすすめの雑貨商品を1週間毎に4つほど紹介します。日常品雑貨や消耗品雑貨など幅広く取り扱っております。NOODLEは1週間ごとに雑貨のジャンルが変化し、毎週違うジャンルの雑貨商品をおすすめしております。コロナ禍で失われつある「わくわく感」を取り戻すことができます。必ずお客様の求める雑貨がここにあります</p>
+      </div>
+      </div>
+
+
 
 <!--      02 安心できるサービス      -->
 
-    <div class="sample2-position">
-        <p><span class="charm-2">安心できるサービス</span></p>
-    </div>
-    <div class="sample-position">
-        <img src="../about-img/sample2.jpg" alt="">
-    </div>
-    <!-- 画像で代用しているので後でちゃんと書きます。ごめんなさい！ -->
+
+    <p class="charm-head"><span class="charm-02">安心できるサービス</span></p>
+    <div class="charm-flex">
+        <div class="charm-img01">
+
+            <img src="../about-img/smile.png"  alt="">
+        </div>
+        <div class="charm-font">
+            <p>トラブルがあった際は最後までサポートさせていただきます。お客様が安心して購入できる環境作りに力をいれておりますので、お問い合わせの際は迅速に対応いたします。</p>
+      </div>
+      </div>
 
     <!--      Our Story      -->
 
@@ -172,15 +208,9 @@
 
           <!-------------以下---------------->
           <div class="text-99">
-          <p class="text-98">本ECサイトはリーダーの城下を始め鹿毛、小村、末永の4人で企画や設計、デザインやデータベースの構築など全て1から作り上げました。今後とも宜しくお願いいたします。</p>
+          <p class="text-98">本ECサイトはリーダーの城下を始め鹿毛、小村、末永の4人で企画や設計、データベースの構築など全て1から作り上げました。今後とも宜しくお願いいたします。</p>
         </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/js/5-1-11.js"></script>
 </body>
 </html>
-
-<!-- セクションとは
-メインとは
-スパンとは
-ラベルとは
-他に使うやつ調べる -->

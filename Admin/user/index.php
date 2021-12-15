@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(isset($_POST['user'])){
+
+}
+  $dsn='mysql:host=mysql154.phy.lolipop.lan;
+  dbname=LAA1290560-blue;charset=utf8';
+  $username='LAA1290560';
+  $password='green';
+  $pdo=new PDO($dsn,$username,$password);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -11,28 +22,37 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <div class="header-L"><a href="../index.html"><i class="fas fa-home"></i></a><a href="../"><i class="far fa-arrow-alt-circle-left"></i></a></div>
-    <div class="header-center"><p>会員管理</p></div>
-    <div class="header-R"><p title="ログイン中のユーザ">aso@gmail.com</p></div>
-  </header>
+
+<?php
+if(isset($_SESSION['admin'])){
+require '../header.php';
+?>
+
   <main>
     <p>会員管理画面です</p>
     <table border="1" width="100%">
-      <tr>
+    <tr>
         <th>会員ID
         </th>
         <th>ユーザ名</th>
         <th>本名</th>
-        <th>メールアドレス</th>
         <th>パスワード</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>麻生雅樹</td>
-        <th>メールアドレス</th>
-        <td>aso1224</td>
-      </tr>
+
+    <?php
+    $sql=$pdo->prepare('select id,customer_name,customer_user,customer_pass from customer');
+    $sql->execute();
+    foreach($sql as $row){
+      echo '<tr>';
+      echo '<td>',$row['id'],'</td>';
+      echo '<td>',$row['customer_user'],'</td>';
+      echo '<td>',$row['customer_name'],'</td>';
+      echo '<td>',$row['customer_pass'],'</td>';
+      echo '</tr>';
+
+    }
+  }
+    ?>
     </table>
 
   </main>
