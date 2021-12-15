@@ -13,7 +13,7 @@
 <div class="back-color">
     <div class="login">
         <h1>ログイン</h1>
-        <form action="login-judge.php" method="post">
+        <form action="login_judge.php" method="post">
     <div class="ew">
         <label for="username"><i class="fas fa-user"></i></label>
         <input type="text" name="user" id="username" value="tatara" placeholder="ユーザー名"><br>

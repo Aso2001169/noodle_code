@@ -42,7 +42,7 @@ form{
 .label{
   width: 30%;
 }
-input[type="text"],input[type="tel"],input[type="mail"],input[type="password"]{
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"]{
   border-bottom: 1px #818178 solid;
   padding: 15px;
   width: 40vw;
