@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="icon" type="image/svg+xml" href="http://aso2001169.heavy.jp/noodle_code/about-img/icon.svg">
+<title>noodle</title>
 </head>
 <body>
   
@@ -104,7 +105,7 @@ echo '<a class="back" href="' . $_SERVER['HTTP_REFERER'] . '">前に戻る</a>';
           </div>
           <div>
           <?php
-            echo '<input type="tel" name="phon" id="five" value="',$_POST['phon'],'">';
+            echo '<input pattern="^¥d+$" type="tel" name="phon" id="five" value="',$_POST['phon'],'">';
             ?> 
             
           </div>
@@ -116,7 +117,7 @@ echo '<a class="back" href="' . $_SERVER['HTTP_REFERER'] . '">前に戻る</a>';
           </div>
           <div>
           <?php
-            echo '<input type="mail" name="mail" id="six" value="',$_POST['mail'],'">';
+            echo '<input type="email" name="mail" id="six" value="',$_POST['mail'],'">';
             ?> 
           </div>
         </div>

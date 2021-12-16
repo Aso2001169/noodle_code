@@ -35,10 +35,10 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 
 <ul>
 <li><?php echo $_SESSION['customer']['user'],'さん'; ?></li>
-<li><a href="../home-page/index.php">TOP</a></li>
+<li><a href="index.php">TOP</a></li>
 <li><a href="#">ABOUT</a></li>
 <li><a href="../cart/cart.php">CART</a></li>
-<li><a href="#">MY PAGE</a></li>
+<li><a href="my-page.php">MY PAGE</a></li>
 </ul>
 </div>
 </nav>
@@ -58,7 +58,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <main>
 <p class="midashi">あこがれる日常生活に</p>
 <div class="text">
-<p class="text1">雑貨はプレゼントにも最適です。お揃いの品や思い出の品に最適です。</p>
+<p class="text1">雑貨はプレゼントにも最適な上にお揃いの品や思い出の品にもなります。</p>
 </div>
 
 <!--      CONTENT      -->
@@ -129,7 +129,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
     <!--      Our Story      -->
 
     <p class="story">Our Story</p>
-    <p class="story-font">私たちは授業の一環である企業開発という授業で雑貨販売サイトを作成しました。コロナの影響で外出する事が減り、目的の買い物のついでに”偶然見つけて購入するワクワク感や商品との出会い”が減りました。そこで私たちは、わざわざ外出しなくても、ここに訪れたら毎週新しい雑貨に出会える。お店に行った時のワクワク感を味わえる。という気持ちを味わってもらいたくて作成しました。
+    <p class="story-font">私たちは授業の一環である企業連携という授業で雑貨販売サイトを作成しました。コロナウイルスの影響で外出する事が減り、目的の買い物のついでに”偶然見つけて購入するワクワク感や商品との出会い”が減りました。そこで私たちは、わざわざ外出しなくてもここに訪れたら毎週新しい雑貨に出会える。お店に行った時のワクワク感を味わえる。という気持ちを味わってもらいたくて作成しました。
     </p>
 
     <!-- メンバー 一覧      -->

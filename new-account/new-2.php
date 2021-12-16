@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="icon" type="image/svg+xml" href="http://aso2001169.heavy.jp/noodle_code/about-img/icon.svg">
+<title>noodle</title>
+
 </head>
 <body>
   <header>
@@ -88,7 +90,7 @@
             <label for="five">電話番号:</label>
           </div>
           <div>
-            <input type="tel" name="phon" id="five">
+            <input type="tel" pattern="^¥d+$" name="phon" id="five">
           </div>
         </div>
 
@@ -106,7 +108,7 @@
             <p  v-if="isInvalidKei" class="kakuninyou">パスワードが一致しません</p>
             <div class="label">
               <label for="seven">パスワード（4文字以上32文字以下）:</label>
-              <p v-if="passcnt">4文字以上32文字以下である必要があります</p>
+              <p class="wpass">4文字以上32文字以下である必要があります</p>
             </div>
             <div>
               <input v-model="tanka" type="password" name="pass" id="seven" maxlength="32" minlength="4">

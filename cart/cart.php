@@ -47,7 +47,7 @@ dbname=LAA1290560-blue;charset=utf8';
     </div>
 </div>
 <div class="cart-button">
-    <a href="thank-you.php">購入</a>
+    <a href="ready.php">購入</a>
 </div>
 </body>
 </html>

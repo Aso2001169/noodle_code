@@ -1,5 +1,5 @@
 * {
-  color: #001E43;
+  color: #000;
 }
 
 
@@ -13,20 +13,13 @@ a{
 }
 
 
-body{
-  background-image: url(../login-img/login-haikei.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 
 .login{
-  border:3px solid black;
-  border-style: double;
-  border-width: 10px;
+  border:1px solid #737373;
+  border-width: 3px;
   background: #fff;
+  border-radius: 50px 50px;
 }
 
 .login{
@@ -49,9 +42,9 @@ h1{
 
 .ew [type = text],[type = password]{
   font-size: 2vw;
-  margin-top: 50px; /* ここのせいで青い枠出る */
-  width: 300px;
-  border-bottom:1px solid #001E43;
+  margin-top: 50px;
+  width: 500px;
+  border-bottom:1px solid #737373;
   border-right:none;
   border-left:none;
   border-top:none;
@@ -61,34 +54,75 @@ h1{
 
 .btn-border {
   margin-top:50px;
-  border: 2px solid #001E43;
-  background: #fff;
+  border: 2px solid #000;
+  background: #000;
   font-size: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 210px;
+  padding-right: 210px;
   text-decoration: none;
-  color: #001E43;
+  color: #fff;
+  border-radius: 50px 50px;
 }
 
 .btn-border:hover {
-  color: #fff;
-  background: #001E43;
+  color: #000;
+  background: #fff;
 }
 
 .entry{
-  border: 2px solid #001E43;
-  background: #fff;
   font-size: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 50px;
   padding-right: 50px;
   text-decoration: none;
-  color: #001E43;
 }
 
 .new{
-  margin: 80px;
+  text-decoration: underline;
+  margin: 50px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+  .login{
+    border:1px solid #737373;
+    border-width: 1px;
+    background: #fff;
+    border-radius: 50px 50px;
+  }
+
+  .ew [type = text],[type = password]{
+    font-size: 7vw;
+    margin-top: 70px;
+    width: 300px;
+    border-bottom:1px solid #737373;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    outline: none;
+  }
+
+
+  .btn-border {
+    margin-top:100px;
+    border: 2px solid #000;
+    background: #000;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .new{
+    text-decoration: underline;
+    margin: 50px;
+  }
 }

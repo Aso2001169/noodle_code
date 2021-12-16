@@ -1,17 +1,13 @@
 <?php
 session_start();
-
-function getDb(){
-  $dsn='mysql:host=mysql154.phy.lolipop.lan;
+$dsn='mysql:host=mysql154.phy.lolipop.lan;
   dbname=LAA1290560-blue;charset=utf8';
   $username='LAA1290560';
   $password='green';
   $pdo=new PDO($dsn,$username,$password);
-  return $pdo;
-}
-$pdo=getDb();
-
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -25,22 +21,36 @@ $pdo=getDb();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
-  <META http-equiv="Refresh" content="3;URL=http://aso2001169.heavy.jp/noodle_code/home-page/index.php">
-
   <link rel="icon" type="image/svg+xml" href="http://aso2001169.heavy.jp/noodle_code/about-img/icon.svg">
 <title>noodle</title>
 </head>
 <body>
-<?php
-$sql=$pdo->prepare('update customer set customer_name=?, customer_phon=?, customer_address=?, customer_Postalcode=?, customer_user=?, customer_mail=?, customer_pass=? where id=?');
-if($sql->execute([$_POST['name'],$_POST['phon'],$_POST['sddress'],$_POST['postal'],$_POST['user'],$_POST['mail'],$_POST['pass'],$_SESSION['customer']['id']])){
-  echo '<p>会員情報を更新しました。3秒後に戻ります</p>';
-}else{
-  echo '<p>会員情報を更新できませんでした。再度お試しください。3秒後に戻ります</p>';
-}
-?>
-  <?php
-  ?>
-</body>
+  <header>
+    <a class="back" href="./">戻る</a>
+  </header>
+  <h1>購入履歴</h1>
+<center>
+    <table>
+
+    <?php
+      $sql=$pdo->prepare("select * from OrderDetails,merchandise where merchandise.merchandise_id=OrderDetails.marchandise_id and mUserId=?");
+      $sql->execute([$_SESSION['customer']['id']]);
+      foreach($sql as $row){
+
+        echo '<tr>';
+        echo '<td>',$row['orderdate'],'</td>';
+        echo '<td>',$row['merchandise_name'],'</td>';
+        echo '</tr>';
+      }
+    ?>
+
+    </table>
+
+        <div class="first"></div>
+        
+        
+
+
+        </center>
 </body>
 </html>

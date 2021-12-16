@@ -236,9 +236,6 @@ header {
     padding-bottom: 3vw;
 }
 
-/*       */
-
-
 
 /* メンバー */
 
@@ -259,7 +256,7 @@ header {
     padding-bottom: 3vw;
 }
 
-/*       */
+
 
 
 .flex{
@@ -287,8 +284,6 @@ header {
     width: 90%;
 }
 
-
-
 .text-99{
     text-align: center;
     padding-top: 150px;
@@ -301,42 +296,6 @@ header {
     text-align: left;
     font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*========= ナビゲーションのためのCSS ===============*/

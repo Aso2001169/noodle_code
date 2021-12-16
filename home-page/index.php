@@ -33,6 +33,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
+<link rel="icon" type="image/svg+xml" href="http://aso2001169.heavy.jp/noodle_code/about-img/icon.svg">
 
 <title>TOP PAGE</title>
 </head>
@@ -46,7 +47,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 <li><a href="#">TOP</a></li>
 <li><a href="about.php">ABOUT</a></li>
 <li><a href="../cart/cart.php">CART</a></li>
-<li><a href="my-page.php">[準備中]MY PAGE</a></li>
+<li><a href="my-page.php">MY PAGE</a></li>
 </ul>
 </div>
 </nav>
@@ -65,7 +66,6 @@ if(isset($_SESSION['customer'])){
 
   <div class="haikei2-position">
       <div class="haikei2-img">
-
       <img src="../index-img/haikei2.jpg" width="650" height="700" alt="">
       </div>
       <div class="haikei2-font">

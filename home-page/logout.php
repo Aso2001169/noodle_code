@@ -23,7 +23,8 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
   <META http-equiv="Refresh" content="3;URL=http://aso2001169.heavy.jp/noodle_code/new-account/login.php">
 
-  <title>Document</title>
+  <link rel="icon" type="image/svg+xml" href="http://aso2001169.heavy.jp/noodle_code/about-img/icon.svg">
+<title>noodle</title>
 </head>
 <body>
   <?php

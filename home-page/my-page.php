@@ -21,7 +21,8 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="icon" type="image/svg+xml" href="http://aso2001169.heavy.jp/noodle_code/about-img/icon.svg">
+<title>noodle</title>
 </head>
 <body>
   <header>
@@ -114,7 +115,7 @@ $dsn='mysql:host=mysql154.phy.lolipop.lan;
 </div>
 <div>
   <?php
-echo '<input type="tel" pattern="^[0-9]+$" name="phon" id="five" value="',$row['customer_phon'],'">';
+echo '<input type="tel" pattern="^¥d+$" name="phon" id="five" value="',$row['customer_phon'],'">';
 ?>
 </div>
 </div>
@@ -140,7 +141,8 @@ echo '<input type="email" name="mail" id="six" value="',$row['customer_mail'],'"
 
         <button type="submit">更新</button>
         <button><a href="logout.php">ログアウト</a></button>
-        
+        <button><a href="history.php">注文確認</a></button>
+
     </form>
   </div>
 </body>
